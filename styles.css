@@ -1,0 +1,96 @@
+/* Reset de estilo para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #7ec8e3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Estilo del contenedor */
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Efecto de transición para suavizar la entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilo del encabezado */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #005b96;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo de la sección de integrantes */
+.integrantes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.integrantes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.integrantes li {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #555;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre un integrante */
+.integrantes li:hover {
+    color: #4a90e2;
+    transform: scale(1.05);
+}
+
+/* Estilo del pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin-top: 10px;
+}
